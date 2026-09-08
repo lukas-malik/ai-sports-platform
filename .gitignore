@@ -2,6 +2,7 @@
 **/.env
 **/data/
 **/logs/
+**/run_local.cmd
 __pycache__/
 *.pyc
 .venv/
