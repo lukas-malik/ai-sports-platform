@@ -55,6 +55,7 @@ Nevyřešeno: ověření podmínek Tennis API.com pro osobní použití a reáln
 | D17 | Název projektu: Kalibr | Nahrazuje AI SPORTS INTELLIGENCE PLATFORM; název repa a Claude Projectu se přejmenuje ručně |
 | D18 | Na projektu pracují souběžně Claude Cowork a ChatGPT Work podle jedněch pravidel v `AGENTS.md`; pravda o dokumentech je složka `docs/` v GitHub repu | Zapsal [claude]. Otevřené: zda ChatGPT Work v cloudu umí pracovat nad repem (čeká na test) |
 | D19 | Revize D17: název projektu Valibr (VALue + calIBRation). Technický identifikátor `valibr`, proměnné prostředí `VALIBR_*`; konvence a ověření v `docs/NAME_DECISION.md` | Schválil Lukáš 4. 10. 2026, zapsal [claude]. Repo a projekty se přejmenují ručně; běžící kolektor se zatím nemění, rozhodne Lukáš později (NAVRHY) |
+| D20 | Spolupráce AI: ChatGPT Work v cloudu je primární vývojář, Claude je oponent (revize, red team, skeptic). Práci zadává Lukáš ručně v chatu. Pull request, který mění kód nebo zapisuje či reviduje D číslo, musí mít před sloučením revizi druhého agenta; ostatní bez revize. Slučuje Lukáš | Schválil Lukáš 4. 10. 2026, zapsal [claude]. Upřesňuje D18. Pravidla v `AGENTS.md` (20 až 24). Platí od sloučení pull requestu, který D20 zavádí; ten Lukáš slučuje bez revize druhého agenta, protože ChatGPT Work v cloudu ještě není připojen |
 
 ## Blok 3: AI, ML, agenti
 
