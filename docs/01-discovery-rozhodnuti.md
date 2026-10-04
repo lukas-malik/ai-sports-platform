@@ -1,8 +1,8 @@
-# KALIBR: Discovery, rozhodnutí
+# Valibr: Discovery, rozhodnutí
 
-Dřívější název projektu: AI SPORTS INTELLIGENCE PLATFORM (přejmenováno 2. 10. 2026, D17). Pravda je soubor `docs/01-discovery-rozhodnuti.md` v repu projektu; kopie v Claude Projectu se aktualizuje z repa.
+Dřívější názvy projektu: AI SPORTS INTELLIGENCE PLATFORM (přejmenováno 2. 10. 2026, D17), Kalibr (přejmenováno 4. 10. 2026, D19). Pravda je soubor `docs/01-discovery-rozhodnuti.md` v repu projektu; kopie v Claude Projectu se aktualizuje z repa.
 
-Průběžný záznam odpovědí a rozhodnutí z discovery fáze. Každé rozhodnutí má ID (D číslo), aby se na něj dalo odkazovat v Blueprintu. Stav: 2. 10. 2026.
+Průběžný záznam odpovědí a rozhodnutí z discovery fáze. Každé rozhodnutí má ID (D číslo), aby se na něj dalo odkazovat v Blueprintu. Stav: 4. 10. 2026.
 
 ## Kontext před discovery
 
@@ -48,12 +48,13 @@ Stav D15 (7. 9. 2026 večer): skript `collector/odds_collector.py` hotový, otes
 
 Nevyřešeno: ověření podmínek Tennis API.com pro osobní použití a reálné hloubky opening/closing historie (trial); podmínky tennis-data.co.uk (web nedostupný).
 
-## Organizace projektu (2. 10. 2026)
+## Organizace projektu (2. a 4. 10. 2026)
 
 | ID | Rozhodnutí | Poznámka |
 |----|-----------|----------|
 | D17 | Název projektu: Kalibr | Nahrazuje AI SPORTS INTELLIGENCE PLATFORM; název repa a Claude Projectu se přejmenuje ručně |
 | D18 | Na projektu pracují souběžně Claude Cowork a ChatGPT Work podle jedněch pravidel v `AGENTS.md`; pravda o dokumentech je složka `docs/` v GitHub repu | Zapsal [claude]. Otevřené: zda ChatGPT Work v cloudu umí pracovat nad repem (čeká na test) |
+| D19 | Revize D17: název projektu Valibr (VALue + calIBRation). Technický identifikátor `valibr`, proměnné prostředí `VALIBR_*`; konvence a ověření v `docs/NAME_DECISION.md` | Schválil Lukáš 4. 10. 2026, zapsal [claude]. Repo a projekty se přejmenují ručně; běžící kolektor se zatím nemění, rozhodne Lukáš později (NAVRHY) |
 
 ## Blok 3: AI, ML, agenti
 

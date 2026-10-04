@@ -1,6 +1,6 @@
-# KALIBR: společná pravidla pro Claude Cowork a ChatGPT Work
+# Valibr: společná pravidla pro Claude Cowork a ChatGPT Work
 
-Dřívější název projektu: AI SPORTS INTELLIGENCE PLATFORM. Tato pravidla platí pro každého AI agenta, který v repu pracuje.
+Dřívější názvy projektu: AI SPORTS INTELLIGENCE PLATFORM, Kalibr (D17, revidováno D19). Tato pravidla platí pro každého AI agenta, který v repu pracuje.
 
 ## Pravda
 1. Pravda jsou jen soubory v tomto repu. Paměť platformy, historie chatu a kopie dokumentů v Claude Projectu jsou cache.
@@ -29,3 +29,4 @@ Dřívější název projektu: AI SPORTS INTELLIGENCE PLATFORM. Tato pravidla pl
 ## Styl
 17. Česky, věcně, oponentura místo validace.
 18. Postup podle master instrukcí: discovery po blocích, pak Blueprint, pak kód.
+19. Názvy v kódu a dokumentech podle `docs/NAME_DECISION.md`. Při hledání starého názvu hledej celé slovo „kalibr“, ne „kalib“ (kalibrace je odborný termín a nemění se).
