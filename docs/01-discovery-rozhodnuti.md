@@ -1,8 +1,8 @@
-# KALIBR: Discovery, rozhodnutí
+# Valibr: Discovery, rozhodnutí
 
-Dřívější název projektu: AI SPORTS INTELLIGENCE PLATFORM (přejmenováno 2. 10. 2026, D17). Pravda je soubor `docs/01-discovery-rozhodnuti.md` v repu projektu; kopie v Claude Projectu se aktualizuje z repa.
+Dřívější názvy projektu: AI SPORTS INTELLIGENCE PLATFORM (přejmenováno 2. 10. 2026, D17), Kalibr (přejmenováno 4. 10. 2026, D19). Pravda je soubor `docs/01-discovery-rozhodnuti.md` v repu projektu; kopie v Claude Projectu se aktualizuje z repa.
 
-Průběžný záznam odpovědí a rozhodnutí z discovery fáze. Každé rozhodnutí má ID (D číslo), aby se na něj dalo odkazovat v Blueprintu. Stav: 2. 10. 2026.
+Průběžný záznam odpovědí a rozhodnutí z discovery fáze. Každé rozhodnutí má ID (D číslo), aby se na něj dalo odkazovat v Blueprintu. Stav: 4. 10. 2026 (D21).
 
 ## Kontext před discovery
 
@@ -46,15 +46,20 @@ Předpoklady: Betano CZ jako proxy českého trhu má kurzy dostatečně korelov
 
 Stav D15 (7. 9. 2026 večer): skript `collector/odds_collector.py` hotový, otestovaný (5 unit testů, ostrý běh: 2 turnaje, 470 řádků, 2 kredity), poběží 24/7 na firemním Windows Serveru přes Plánovač úloh, nasazení přes GitHub repo https://github.com/lukas-malik/ai-sports-platform (privátní, kód nahrán 7. 9. 2026, commit a921d86). Klíč The Odds API je v `.env` v připojené složce. Zjištění z ostrého běhu: v regionu eu u tenisu není Betano; ostrá reference Pinnacle, doplňkově Betfair Exchange a Matchbook.
 
+Stav D15 (4. 10. 2026): kolektor na serveru dosud neběží; instalace selhala (podrobnosti a doporučení v `docs/HANDOFF-2026-10-04.md`). Od 7. 9. se neukládá historie kurzů.
+
 Nevyřešeno: ověření podmínek Tennis API.com pro osobní použití a reálné hloubky opening/closing historie (trial); podmínky tennis-data.co.uk (web nedostupný).
 
-## Organizace projektu (2. 10. 2026)
+## Organizace projektu (2. a 4. 10. 2026)
 
 | ID | Rozhodnutí | Poznámka |
 |----|-----------|----------|
 | D17 | Název projektu: Kalibr | Nahrazuje AI SPORTS INTELLIGENCE PLATFORM; název repa a Claude Projectu se přejmenuje ručně |
 | D18 | Na projektu pracují souběžně Claude Cowork a ChatGPT Work podle jedněch pravidel v `AGENTS.md`; pravda o dokumentech je složka `docs/` v GitHub repu | Zapsal [claude]. Otevřené: zda ChatGPT Work v cloudu umí pracovat nad repem (čeká na test) |
+| D19 | Revize D17: název projektu Valibr (VALue + calIBRation). Technický identifikátor `valibr`, proměnné prostředí `VALIBR_*`; konvence a ověření v `docs/NAME_DECISION.md` | Schválil Lukáš 4. 10. 2026, zapsal [claude]. Repo a projekty se přejmenují ručně; běžící kolektor se zatím nemění, rozhodne Lukáš později (NAVRHY) |
+| D20 | Spolupráce AI: ChatGPT Work v cloudu je primární vývojář, Claude je oponent (revize, red team, skeptic). Práci zadává Lukáš ručně v chatu. Pull request, který mění kód nebo zapisuje či reviduje D číslo, musí mít před sloučením revizi druhého agenta; ostatní bez revize. Slučuje Lukáš | Schválil Lukáš 4. 10. 2026, zapsal [claude]. Upřesňuje D18. Pravidla v `AGENTS.md` (20 až 24). Platí od sloučení pull requestu, který D20 zavádí; ten Lukáš slučuje bez revize druhého agenta, protože ChatGPT Work v cloudu ještě není připojen |
+| D21 | Uplatnění D20 v plném rozsahu: veškerou další práci (zprovoznění kolektoru na serveru včetně instalátoru, discovery bloky 3 až 25, Blueprint, implementace) vede ChatGPT Work v cloudu. Claude Cowork pouze reviduje pull requesty a drží kopie dokumentů v Claude Projectu | Schválil Lukáš 4. 10. 2026 v chatu Claude Cowork, zapsal [claude]. Předávací balík: `docs/HANDOFF-2026-10-04.md`. Riziko: přístup ChatGPT Work k repu dosud neověřen (NAVRHY 2. 10.); pokud selže, D21 revidovat |
 
 ## Blok 3: AI, ML, agenti
 
-(čeká)
+(čeká; vede ChatGPT Work, D21)
