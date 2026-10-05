@@ -1,6 +1,6 @@
-# KALIBR: společná pravidla pro Claude Cowork a ChatGPT Work
+# VALBEE: společná pravidla pro Claude Cowork a ChatGPT Work
 
-Dřívější název projektu: AI SPORTS INTELLIGENCE PLATFORM. Tato pravidla platí pro každého AI agenta, který v repu pracuje.
+Dřívější názvy projektu: AI SPORTS INTELLIGENCE PLATFORM, Kalibr (D17), Valibr (D19); platný název VALBEE (D22). Tato pravidla platí pro každého AI agenta, který v repu pracuje.
 
 ## Pravda
 1. Pravda jsou jen soubory v tomto repu. Paměť platformy, historie chatu a kopie dokumentů v Claude Projectu jsou cache.
@@ -29,3 +29,15 @@ Dřívější název projektu: AI SPORTS INTELLIGENCE PLATFORM. Tato pravidla pl
 ## Styl
 17. Česky, věcně, oponentura místo validace.
 18. Postup podle master instrukcí: discovery po blocích, pak Blueprint, pak kód.
+19. Názvy v kódu a dokumentech podle `docs/NAME_DECISION.md`. Při hledání starých názvů hledej celá slova „kalibr“ a „valibr“, ne „kalib“ (kalibrace je odborný termín a nemění se).
+
+## Role a revize (D20)
+20. ChatGPT Work je primární vývojář. Claude je oponent: revize, red team, skeptic. Práci zadává Lukáš ručně v chatu; agent pracuje jen na zadaném úkolu.
+21. Pull request, který mění kód nebo zapisuje či reviduje D číslo, potřebuje před sloučením revizi druhého agenta. Revize se píše do pull requestu: verdikt (schválit / vrátit), nalezená rizika, důvody. Ostatní pull requesty revizi nepotřebují.
+22. Revidující agent v cizím pull requestu nic nemění; připomínky píše jen do revize.
+
+## Cloud
+23. Agent v cloudu vidí jen toto repo. Klíče, `.env` a data kolektoru v repu nejsou a cloud k nim přístup nemá; nesnaž se je získat jinou cestou.
+24. V cloudu se nevolá The Odds API ani jiné placené API a nespouští se kolektor. Kredity spotřebovává jen kolektor na serveru (D12, D15).
+25. Jak je která platforma k repu připojená (účet, konektor, token, větve) a jak se přístup ověřuje, popisuje `docs/03-napojeni-platforem.md`. Token je tajemství jako `.env` (bod 13): do repa, dokumentů ani chatu nepatří.
+26. Instrukce projektu v Claude Projectu a v projektu ChatGPT Work jsou jen krátký odkaz na tento soubor (`docs/03-napojeni-platforem.md`, § 4). Pravidla se do nich nekopírují, aby existovala jedna verze.

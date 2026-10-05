@@ -1,7 +1,7 @@
-# KALIBR
+# VALBEE
 ## MASTER PROJECT INSTRUCTIONS — DISCOVERY & ARCHITECTURE PHASE
 
-Dřívější název projektu: AI SPORTS INTELLIGENCE PLATFORM (přejmenováno 2. 10. 2026, rozhodnutí D17). Pravda je soubor `docs/00-master-instrukce.md` v repu projektu; kopie v Claude Projectu se aktualizuje z repa.
+Dřívější názvy projektu: AI SPORTS INTELLIGENCE PLATFORM (přejmenováno 2. 10. 2026, rozhodnutí D17), Kalibr (přejmenováno 4. 10. 2026, rozhodnutí D19), Valibr (přejmenováno 5. 10. 2026, rozhodnutí D22). Pravda je soubor `docs/00-master-instrukce.md` v repu projektu; kopie v Claude Projectu se aktualizuje z repa.
 
 Zdroj: zadání od Lukáše Malíka, 7. 9. 2026. Toto je hlavní zadání projektu. Discovery odpovědi a rozhodnutí se zapisují do samostatného dokumentu `01-discovery-rozhodnuti.md`.
 
