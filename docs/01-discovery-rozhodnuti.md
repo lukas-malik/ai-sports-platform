@@ -1,8 +1,8 @@
-# Valibr: Discovery, rozhodnutí
+# VALBEE: Discovery, rozhodnutí
 
-Dřívější názvy projektu: AI SPORTS INTELLIGENCE PLATFORM (přejmenováno 2. 10. 2026, D17), Kalibr (přejmenováno 4. 10. 2026, D19). Pravda je soubor `docs/01-discovery-rozhodnuti.md` v repu projektu; kopie v Claude Projectu se aktualizuje z repa.
+Dřívější názvy projektu: AI SPORTS INTELLIGENCE PLATFORM (přejmenováno 2. 10. 2026, D17), Kalibr (přejmenováno 4. 10. 2026, D19), Valibr (přejmenováno 5. 10. 2026, D22). Pravda je soubor `docs/01-discovery-rozhodnuti.md` v repu projektu; kopie v Claude Projectu se aktualizuje z repa.
 
-Průběžný záznam odpovědí a rozhodnutí z discovery fáze. Každé rozhodnutí má ID (D číslo), aby se na něj dalo odkazovat v Blueprintu. Stav: 4. 10. 2026 (D21).
+Průběžný záznam odpovědí a rozhodnutí z discovery fáze. Každé rozhodnutí má ID (D číslo), aby se na něj dalo odkazovat v Blueprintu. Stav: 5. 10. 2026 (D23).
 
 ## Kontext před discovery
 
@@ -59,6 +59,8 @@ Nevyřešeno: ověření podmínek Tennis API.com pro osobní použití a reáln
 | D19 | Revize D17: název projektu Valibr (VALue + calIBRation). Technický identifikátor `valibr`, proměnné prostředí `VALIBR_*`; konvence a ověření v `docs/NAME_DECISION.md` | Schválil Lukáš 4. 10. 2026, zapsal [claude]. Repo a projekty se přejmenují ručně; běžící kolektor se zatím nemění, rozhodne Lukáš později (NAVRHY) |
 | D20 | Spolupráce AI: ChatGPT Work v cloudu je primární vývojář, Claude je oponent (revize, red team, skeptic). Práci zadává Lukáš ručně v chatu. Pull request, který mění kód nebo zapisuje či reviduje D číslo, musí mít před sloučením revizi druhého agenta; ostatní bez revize. Slučuje Lukáš | Schválil Lukáš 4. 10. 2026, zapsal [claude]. Upřesňuje D18. Pravidla v `AGENTS.md` (20 až 24). Platí od sloučení pull requestu, který D20 zavádí; ten Lukáš slučuje bez revize druhého agenta, protože ChatGPT Work v cloudu ještě není připojen |
 | D21 | Uplatnění D20 v plném rozsahu: veškerou další práci (zprovoznění kolektoru na serveru včetně instalátoru, discovery bloky 3 až 25, Blueprint, implementace) vede ChatGPT Work v cloudu. Claude Cowork pouze reviduje pull requesty a drží kopie dokumentů v Claude Projectu | Schválil Lukáš 4. 10. 2026 v chatu Claude Cowork, zapsal [claude]. Předávací balík: `docs/HANDOFF-2026-10-04.md`. Riziko: přístup ChatGPT Work k repu dosud neověřen (NAVRHY 2. 10.); pokud selže, D21 revidovat |
+| D22 | Revize D19: název projektu VALBEE. Technický identifikátor `valbee`, proměnné prostředí `VALBEE_*`; konvence a ověření v `docs/NAME_DECISION.md`. Valibr zůstává jen jako historický název (4. až 5. 10. 2026) | Schválil Lukáš 5. 10. 2026 v chatu Claude Cowork, zapsal [claude]. Repo se přejmenuje ručně na `valbee` (NAVRHY); Claude Project a složka OneDrive už VALBEE jsou. Kolektor na serveru se zatím nemění (D19, NAVRHY) |
+| D23 | Repo je privátní (5. 10. 2026 zjištěno, že bylo veřejné; dokumenty mylně uváděly privátní). ChatGPT Work přistupuje k repu přes oficiální GitHub konektor (čtení) a fine grained personal access token s právy jen na toto repo (git push, pull request z cloudového prostředí Work). Claude Cowork přistupuje přes GitHub integraci účtu lukas-malik. Postup a testovací úkol v `docs/03-napojeni-platforem.md` | Schválil Lukáš 5. 10. 2026 v chatu Claude Cowork, zapsal [claude]. Upřesňuje D18 a D21. Přepnutí na privátní a vytvoření tokenu jsou ruční kroky Lukáše. Pull request s D22 a D23 slučuje Lukáš bez revize druhého agenta ze stejného důvodu jako u D20 (ChatGPT Work dosud nepřipojen). Pokud test přístupu selže, D21 revidovat |
 
 ## Blok 3: AI, ML, agenti
 
